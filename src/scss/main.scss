@@ -1,0 +1,37 @@
+@import './global/fonts.scss';
+@import './global//mixins.scss';
+@import './global/base.scss';
+
+
+@import './sections/header.scss';
+/*@import './sections/warn.scss';
+@import './sections/offer.scss';
+@import './sections/ingredients.scss';
+ */
+body {
+  background-color: #000000;
+  margin: 0;
+} 
+html {
+    box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+    width: 1217px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+}
+
+
+
+
