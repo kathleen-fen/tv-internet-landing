@@ -32,13 +32,17 @@ a {
 }
 
 .container {
-    width: 1217px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .row {
   display: flex;
   width: 100%;
+}
+
+.internet__buy, .internet__film {
+  border: 1px solid #000000;
 }
 
 

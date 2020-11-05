@@ -2,7 +2,7 @@
     &__buy {
         position: relative;
         background-image: url(../../img/internet/bg_green.png);
-        width: calc(66% - 19px);
+        width: 66%;
         flex-grow: 2;
         min-height: 50px;
         
@@ -91,6 +91,7 @@
 
     &__price {
         display: flex;
+        padding-bottom: 5px;
         .digit {
             margin-right: 5px;
             display: flex;
