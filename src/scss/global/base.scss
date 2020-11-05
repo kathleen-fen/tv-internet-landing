@@ -5,3 +5,28 @@
    
     width: 145px;
 }
+
+.plus-icon {
+    width: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 4px;
+
+}
+
+.plus {
+    background: #ffffff;
+    height: 10px; 
+    width: 2px;
+    position: relative; 
+    left: 4px;
+    }
+.plus:after {
+    content: "";
+    height: 2px; 
+    width: 10px;
+    background: #ffffff;
+    position: absolute; 
+    left: -4px; 
+    top: 4px;
+    }
