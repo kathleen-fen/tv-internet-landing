@@ -1,40 +1,41 @@
-@import './global/fonts.scss';
-@import './global//mixins.scss';
-@import './global/base.scss';
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global//mixins.scss";
+@import "./global/base.scss";
 
+@import "./sections/header.scss";
+@import "./sections/internet.scss";
 
-@import './sections/header.scss';
-@import './sections/internet.scss';
-/*@import './sections/warn.scss';
-@import './sections/offer.scss';
-@import './sections/ingredients.scss';
- */
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto;
 }
 
- body {
+body {
   background-color: #000000;
-} 
-html {
-    box-sizing: border-box;
 }
+
+html {
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .container {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .row {
@@ -42,10 +43,7 @@ a {
   width: 100%;
 }
 
-.internet__buy, .internet__film {
+.internet__buy,
+.internet__film {
   border: 1px solid #000000;
 }
-
-
-
-

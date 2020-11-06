@@ -1,24 +1,50 @@
 @mixin centerer-xy() {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin centerer-x() {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @mixin centerer-y() {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin plus($size: 10px) {
+  .plus-icon {
+    width: $size;
+    display: flex;
+    align-items: center;
+    margin: 0 $size * 4/10;
   }
 
- @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
+  .plus {
+    background: #ffffff;
+    height: $size;
+    width: $size * 2/10;
+    position: relative;
+    left: $size * 4/10;
+  }
+  .plus:after {
+    content: "";
+    height: $size * 2/10;
+    width: $size;
+    background: #ffffff;
+    position: absolute;
+    left: -$size * 4/10;
+    top: $size * 4/10;
+  }
+}
