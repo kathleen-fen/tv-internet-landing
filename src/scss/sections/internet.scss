@@ -26,6 +26,9 @@
         flex-grow: 1;
         min-height: 50px;
     }
+
+    
+
     &__descr {
         display: flex;
         flex-direction: column;
@@ -33,10 +36,11 @@
         height: 424px;
         padding-top: 29px;
         padding-left: 31px;
-        padding-bottom: 32px;
+        padding-bottom: 27px;
     }
 
     &__title {
+        line-height: 1;
         font-family: Roboto;
         font-size: 40px;
         font-weight: bold;
@@ -112,9 +116,77 @@
             color: #aa2755;
         }
     }
+
     &__text-wrapper {
         display: flex;
     }
+
+    
+
+   &__film {
+       position: relative;
+       .capitan {
+            background-image: url('./../../img/internet/kapitan.jpg');
+            width: 100%;
+            height: 485px;
+            &:hover {
+                background-image: url('./../../img/internet/kapitan_hover.jpg');
+            }
+            transition: all .8s;
+       }
+       
+   }
+   
+   &__video-carousel {
+       position: relative;
+       width: 100%;
+       height: 100%;
+   }
+
+   &__subtitle {
+       text-transform: uppercase;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1;
+        color: #ffffff;
+   }
+
+   &__video-title {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ffffff;
+   }
+
+   &__video-subtitle {
+       display: flex;
+       margin-top: 8px;
+   }
+
+   &__subtitle-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 900;
+    color: #84b82a;
+    text-transform: uppercase;
+    margin-right: 17px;
+   }
+
+   &__subtitle-price {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left;
+    color: #2c8fbd;
+   }
+
+   &__video-wrapper {
+       display: flex;
+       justify-content: space-between;
+   }
+
+
 
 }
 
@@ -163,20 +235,13 @@
     margin-bottom: 0;
 }
 
-
-
-
-
-._1 {
-    font-size: 100px;
-    font-family: "Roboto";
-    color: rgb(170, 39, 85);
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
+.top-lay {
     position: absolute;
-    left: 611.101px;
-    top: 438.5px;
-    z-index: 50;
-  }
-  
+    top: 0;
+     z-index: 3;
+}
+
+
+
+
+

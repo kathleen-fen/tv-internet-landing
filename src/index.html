@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="./css/main.min.css"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
@@ -14,7 +14,7 @@
             <nav>
                 <div class="nav-wrapper">
                     <div class="logo">
-                        <div class="logo__icon">
+                        <div #logo class="logo__icon">
                             <img src="./img/header/logo.png" alt="">
                         </div>
                         <div class="logo__text">
@@ -31,23 +31,67 @@
                     </menu>
                 </div>
                 <div class="nav-wrapper_end nav-wrapper">
-                        <div class="menu_add-item">
-                            <div>
-                                <img src="./img/header/search_icon.png" alt="">
-                            </div>
-                            <a class="menu-item" href=#>szukaj</a>
+                    <div class="menu_add-item">
+                        <div>
+                            <img src="./img/header/search_icon.png" alt="">
                         </div>
-                        <div class="menu_add-item">
-                            <div>
-                                <img src="./img/header/login_icon.png" alt="">
-                            </div>
-                            <a class="menu-item" href=#>strefa abonanta</a>
+                        <a class="menu-item" href=#>szukaj</a>
+                    </div>
+                    <div class="menu_add-item">
+                        <div>
+                            <img src="./img/header/login_icon.png" alt="">
                         </div>
+                        <a class="menu-item" href=#>strefa abonanta</a>
+                    </div>
                 </div>
-                
             </nav>
+            <!-- Dropdown menu -->
+            <div class="dd-menu">
+                <div class="dd-menu__packages">
+                    <div class="dd-menu__title dd-menu__title_top">pACZKI I PAKIETY</div>
+                    <div class="dd-menu__list">
+                        <div class="dd-menu__item">
+                            <div class=dd-menu__icon><img src="./img/dd-menu/tv.png" alt=""></div><a
+                                href="#">telewizja</a>
+                        </div>
+                        <div class="dd-menu__item">
+                            <div class=dd-menu__icon><img src="./img/dd-menu/m_mouse.png" alt=""></div><a
+                                href="#">internet</a>
+                        </div>
+                        <div class="dd-menu__item">
+                            <div class=dd-menu__icon><img src="./img/dd-menu/telefon.png" alt=""></div><a
+                                href="#">telefon</a>
+                        </div>
+                        <div class="dd-menu__item">
+                            <div class=dd-menu__icon><img src="./img/dd-menu/internet.png" alt=""></div><a
+                                href="#">internet mobilny</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dd-menu__vod">
+                    <div class="dd-menu__title">VOD</div>
+                    <div class="dd-menu__text">Oglądaj wtedy, gdy masz czas i ochotę</div>
+                    <div class="dd-menu__film">
+                        <img src="./img/dd-menu/film.jpg" alt="">
+                        <div class="dd-menu__promo">dziś w promocji</div>
+                        <div class="dd-menu__subtitle">Ocalony</div>
+                        <div class="dd-menu__descr">dramat</div>
+                        <a href="#">
+                            <div class="dd-menu__price">
+                                <div>5,00 zł</div>
+                                <div><img src="./img/dd-menu/arrow.png" alt=""> </div>
+                                <div>KUP</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dd-menu__tv">
+                    <div class="dd-menu__title">tv online</div>
+                    <div class="dd-menu__text dd-menu__text_light">Oglądaj telewizję przez internet na czym chcesz:
+                        komputer, tablet, telefon</div>
+                </div>
+            </div>
         </div>
-        
     </header>
 
     <section class="internet">
@@ -59,15 +103,21 @@
                         <div><img src="./img/internet/film_2.jpg" alt=""></div>
                         <div><img src="./img/internet/film_3.jpg" alt=""></div>
                     </div>
-                    
                     <div class="internet__layout">
                         <div class="internet__descr">
                             <div class="internet__title">Zyskaj więcej</div>
                             <div class="internet__main-part">
                                 <div class="internet__icon-part">
-                                    <div class="mouse" ><div class="round"><img src="./img/internet/icons/mouse.png" style="margin-bottom: 2px;" alt=""></div></div>
-                                    <div class="plus-icon"><div class="plus"></div></div>
-                                    <div class="present"><div class="round"><img src="./img/internet/icons/present.png" alt=""></div></div>
+                                    <div class="mouse">
+                                        <div class="round"><img src="./img/internet/icons/mouse.png"
+                                                style="margin-bottom: 2px;" alt=""></div>
+                                    </div>
+                                    <div class="plus-icon">
+                                        <div class="plus"></div>
+                                    </div>
+                                    <div class="present">
+                                        <div class="round"><img src="./img/internet/icons/present.png" alt=""></div>
+                                    </div>
                                 </div>
                                 <div class="internet__promo">Kup internet<span>,</span></div>
                                 <div class="internet__text-wrapper">
@@ -75,20 +125,47 @@
                                         <div class="internet__hbo">a <span>HBO<span>GO</span></span></div>
                                         <div class="internet__text">dostaniesz za</div>
                                     </div>
-                                    <div class="internet__price"> 
+                                    <div class="internet__price">
                                         <div class="digit"><img src="./img/internet/icons/1.png" alt=""></div>
-                                        <div class="cur"><div>zł</div></div>
+                                        <div class="cur">
+                                            <div>zł</div>
+                                        </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="internet__film">
-                    <img src="./img/internet/kapitan.jpg" alt="">
-
+                    <div class="internet__video-carousel">
+                        <div class="capitan">
+                            <div class="internet__descr ">
+                                <div></div>
+                                <div class="internet__video-wrapper">
+                                    <div class="internet__video-text">
+                                        <div class="internet__video-title">Kapitan Ameryka:</div>
+                                        <div class="internet__video-title">Zimowy żołnierz</div>
+                                        <div class="internet__video-subtitle">
+                                            <div class="internet__subtitle-text">nowości - akcja</div>
+                                            <div class="internet__subtitle-price">14,00 zł</div>
+                                        </div>
+                                    </div>
+                                    <div class="views">
+                                        <div class="views__title">film<br> obejrzy</div>
+                                        <div class="views__count">125</div>
+                                        <div class="views__icon"><img src="./img/internet/icons/men.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="internet__descr top-lay">
+                        <div>
+                            <div class="internet__title">VOD</div>
+                            <div class="internet__subtitle">video na żądanie</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

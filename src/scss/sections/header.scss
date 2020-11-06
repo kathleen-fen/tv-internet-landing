@@ -2,12 +2,16 @@
     background-color: #1A1A1A;
     width: 100%;
     nav {
+        position: relative;
         height: 80px;
         display: flex;
         align-items: center;
+        z-index: 6;
+        background-color: #1A1A1A;
     }
 
     .nav-wrapper {
+        
         width: 50%;
         display: flex;
         justify-content: space-between;
