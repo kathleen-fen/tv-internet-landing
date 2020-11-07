@@ -179,3 +179,41 @@
     }
   }
 }
+
+//icon in round border
+
+.img-icon {
+  position: relative;
+  &__border {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    border: 2px solid rgba($color: #ffffff, $alpha: 0.051);
+    @include flex-center;
+    
+  }
+  &__bg {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    @include flex-center;
+  }
+
+  &__descr {
+    position: absolute;
+    bottom: -31px;
+    text-transform: uppercase;
+    width: 93px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    color: $base-text-color;
+    background-color: #61518E;
+    span {
+      font-weight: bold;
+    } 
+  }
+}
