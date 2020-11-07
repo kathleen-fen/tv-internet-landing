@@ -102,5 +102,53 @@
         }
     }
 
+    &__kuba {
+        display: flex;
+        margin-top: 17px;
+    }
+
+    &__kuba-foto {
+        @include flex-center;
+        margin-right: 17px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 2px solid rgba($color: #ffffff, $alpha: .051);
+        img {
+            display: block;
+        }
+    }
+
+    &__kuba-foto-wrap {
+        @include flex-center;
+    }
+
+    &__kuba-wrap {
+        display: flex;
+        align-items: center;
+        width: 181px;
+        &:nth-child(1) {
+            border-bottom: 1px solid rgba($color: #ffffff, $alpha: .051);
+        }
+        
+        padding: 13px 0;
+    }
+    &__kuba-text {
+        font-size: 14px;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-right: 15px;
+    }
+
+    &__prop {
+        margin-top: 6px;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        color: #84b82a;
+        padding-right: 30px;
+    }
+
    
 }
