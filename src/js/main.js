@@ -20,6 +20,16 @@ $(document).ready(function () {
       '<div class="nextArrow"><img src="./img/internet/arrow-right.png" alt=""></div>',
   });
 
+  $(".your-packages__film-carousel").slick({
+    speed: 500,
+    cssEase: "linear",
+    arrows: true,
+    prevArrow:
+      '<div class="prevArrow"><img src="./img/internet/arrow-left.png" alt=""></div>',
+    nextArrow:
+      '<div class="nextArrow"><img src="./img/internet/arrow-right.png" alt=""></div>',
+  });
+
   $(".logo__icon").click(function () {
     $(".dd-menu").toggleClass("dd-menu_open");
   });
