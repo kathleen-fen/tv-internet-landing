@@ -6,6 +6,7 @@
 @import "./sections/header.scss";
 @import "./sections/internet.scss";
 @import "./sections/your-packages.scss";
+@import "./sections//propositions.scss";
 
 * {
   margin: 0;
@@ -37,11 +38,13 @@ a {
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .row {
   display: flex;
   width: 100%;
+  height: 100%;
 }
 
 .internet__buy,

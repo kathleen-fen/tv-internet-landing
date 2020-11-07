@@ -1,0 +1,106 @@
+.propositions {
+    height: 311px;
+    
+    &__item {
+        width: 33%;
+        flex-grow: 1;
+        height: 100%;
+        border: 1px solid #000000;
+        padding-top: 29px;
+        padding-left: 31px;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.88;
+        color:  #84b82a;
+        text-transform: uppercase;
+        &--sup {
+            color: $base-text-color;
+        }
+        &--app {
+            color: #675190;
+        }
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: bold;
+        color: #675190;
+        text-transform: uppercase;
+        &--sup{
+            color: #84b82a;
+        }
+    }
+
+    &__pakiet {
+        background-color: #252525;
+    }
+
+    &__support {
+        background-image: url('./../../img/propositions/bg.jpg');
+
+    }
+
+    &__aplication {
+        background-color: #ffffff;
+    }
+
+    &__text {
+        margin-top: 15px;
+        font-size: 16px;
+        color: $base-text-color;
+    }
+
+    &__list {
+        margin-top: 15px;
+        &-item {
+            margin-left: 15px;
+            line-height: 1.75;
+            position: relative;
+            &::before {
+                content:'';
+                position: absolute;
+                top: 35%;
+                left: -13px;
+                width: 5px;
+                height: 5px;
+                background-color: #84b82a;
+            }
+        }            
+    }
+
+    &__price-wrap {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 31px;
+
+    }
+
+    &__price-descr {
+        margin-right: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        color: #84b82a;
+        text-transform: uppercase;
+        text-align: end;
+    }
+
+    &__price {
+        text-transform: lowercase;
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 0.6;
+        color: #675190;
+        text-align: end;
+        span {
+            font-size: 35px;
+        }
+    }
+
+   
+}
