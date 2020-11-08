@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kathleen-fen/TestProject.git"
+    "url": "git+https://github.com/kathleen-fen/tv-internet-landing.git"
   },
   "author": "Kate Fenchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kathleen-fen/TestProject/issues"
+    "url": "https://github.com/kathleen-fen/tv-internet-landing/issues"
   },
-  "homepage": "https://github.com/kathleen-fen/TestProject#readme",
+  "homepage": "https://github.com/kathleen-fen/tv-internet-landing#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
