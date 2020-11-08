@@ -33,4 +33,12 @@ $(document).ready(function () {
   $(".logo__icon").click(function () {
     $(".dd-menu").toggleClass("dd-menu_open");
   });
+
+  $('.propositions__aplication').mouseover(function(){
+    $('.propositions__app-layout').addClass('visible');
+  })
+
+  $('.propositions__aplication').mouseleave(function(){
+    $('.propositions__app-layout').removeClass('visible');
+  })
 });
