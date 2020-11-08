@@ -1,0 +1,81 @@
+.footer {
+    height: 196px;
+    background-color: #1a1a1a;
+    margin-top: 60px;
+    padding-top: 14px;
+
+    &__vectra {
+        width: 66%;
+        flex-grow: 2;
+    }
+
+    
+
+    &__service {
+        width: 33%;
+        flex-grow: 1;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: normal;
+        color: #7a7a7a;
+        text-transform: uppercase;
+        line-height: 0.8;
+        
+        &--green {
+            color: #84b82a;
+            margin-top: 17px;
+        }
+        &--right {
+            text-align: right;
+        }
+        &--mt15 {
+            margin-top: 15px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.2;
+        color: #675190;  
+        text-transform: uppercase; 
+    }
+
+    &__logo {
+        margin-top: 17px;
+        display: flex;
+        img {
+            margin-right: 9px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 18px;
+        align-items: center;
+        margin-top: 9px;
+        &--border {
+            border-bottom: 1px solid #4c4c4c;
+            align-items: start;
+            margin-top: 0;
+        }
+    }
+
+    &__mini-text {
+        font-size: 11px;
+        text-align: right;
+        color: #585858;
+    }
+    &__icons {
+        img {
+            margin: 0 2px;
+            &:hover {
+                cursor: pointer;;
+            }
+        }
+    }
+    
+}

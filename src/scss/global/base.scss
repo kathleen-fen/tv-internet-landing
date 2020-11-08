@@ -273,3 +273,49 @@
   border-top-color:#84b82a;
   }
 
+
+  //telefon
+  .tel {
+    font-size: 30px;
+    font-weight: 900;
+    color: #84b82a;
+    text-align: right;
+    margin-top: 3px;
+    &--small {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  //menu
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 347px;
+    &-item {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: normal;
+      color: #7a7a7a;
+      text-transform: uppercase;
+      display: block;
+    }
+    &_add-item {
+      @include flex-center;
+      padding: 0 23px;
+      &:nth-last-child(1) {
+        padding-right: 0;
+      }
+      height: 10px;
+      border-left: 1px solid #313131;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  menu {
+    display: flex;
+  }
+
